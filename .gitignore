@@ -1,0 +1,16 @@
+# Build artefacts
+AmigaKlangGUI/bin/
+AmigaKlangGUI/obj/
+
+# VS caches
+.vs/
+AmigaKlangGUI/.vs/
+*.user
+*.suo
+
+# NuGet packages
+packages/
+
+# OS noise
+.DS_Store
+Thumbs.db
