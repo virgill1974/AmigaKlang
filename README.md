@@ -207,6 +207,9 @@ AmigaKlang/
 |   +-- Resources/
 +-- docs/
 |   +-- screenshot.gif
++-- examples/
+|   +-- patches/            Example .akp patch banks
+|   +-- songs/              Example .mod files (template songs)
 +-- Topaznew.ttf             Amiga Topaz font
 +-- *.cur                    Amiga / Atari pointer themes
 +-- trashcan.png             UI icon asset
