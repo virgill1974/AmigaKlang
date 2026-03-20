@@ -5,9 +5,8 @@ AmigaKlang is a modular sample synthesizer for Amiga and Atari ST musicians. It 
 ## Features
 
 - Up to 16 slots per instrument with freely routable node graphs
-- 25+ synthesis, filter, envelope, and utility nodes including vocoder, comb, and reverb blocks
-- Amiga PAL clock playback model with real-time preview, waveform display, zoom, and loop markers
-- Sample import pipeline (WAV/RAW) with optional delta encoding for small executables
+- 25+ synthesis, filter, envelope, and utility nodes including comb filter and reverb blocks
+- Sample import pipeline (WAV/RAW) with delta encoding for small executables
 - Exporters for `.akp` patch banks, `.aki` single instruments, `.mod` templates, `.wav`, and `.txt`
 - Optional Atari ST palette, cursors, and toolbar for cross-platform demo aesthetics
 
@@ -30,7 +29,6 @@ AmigaKlang/
 └── trashcan.png               # UI icon asset
 ```
 
-All build outputs, `.vs/` caches, `bin/`, `obj/`, and NuGet `packages/` folders are intentionally omitted. Restore packages on demand (see below) to keep the public repo lean.
 
 ## Building
 
@@ -56,19 +54,7 @@ All build outputs, `.vs/` caches, `bin/`, `obj/`, and NuGet `packages/` folders 
 
 The cursor, icon, and font files at the repo root must remain next to the executable if you copy it outside the build folder. The WinForms project references them via relative paths.
 
-## Packaging & Distribution
 
-- Keep generated `.exe` or `.mod` exports out of the repository.
-- If you need to share binaries, create GitHub Releases or upload archives separately.
-- When adding new assets (fonts, images), place them in the repo root or under `AmigaKlangGUI/Resources/` and update the project file accordingly.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a feature branch (`feature/waveform-zoom`).
-3. Work on the C# sources; keep resources embedded via `.resx` when possible.
-4. Ensure the solution builds on a clean machine (after `git clean -xfd`).
-5. Open a pull request with a concise summary plus screenshots, audio snippets, or MOD examples if helpful.
 
 ## License
 
