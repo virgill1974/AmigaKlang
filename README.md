@@ -17,6 +17,15 @@ assets (Topaz font, cursors, icons) required to build it from source.
 
 Pouet entry: <https://www.pouet.net/prod.php?which=85351>
 
+### Release Download
+
+The original Pouet release build, including the signed Windows executable, NAudio
+DLL, extensive example patches, example songs, and the `exe_creator`
+m68k/Atari toolchain, is published under
+<https://github.com/virgill1974/AmigaKlang/releases/tag/v1.00> (asset
+`AmigaKlangGUI_V1-00.zip`). Extract it if you only need the ready-to-run
+toolchain without building from source.
+
 ---
 
 ## Features
@@ -214,6 +223,9 @@ AmigaKlang/
 +-- *.cur                    Amiga / Atari pointer themes
 +-- trashcan.png             UI icon asset
 ```
+
+`examples/` mirrors the complete set of release-quality patch banks and MOD
+templates that shipped inside `AmigaKlangGUI_V1-00.zip`.
 
 Build outputs, `.vs/` caches, `bin/`, `obj/`, and NuGet `packages/` folders
 are excluded via `.gitignore`.
